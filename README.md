@@ -1,7 +1,7 @@
 HE_MESH_TUTORIAL
 ================
 
-Basic introduction to Frederik Vanhoutte's He_Mesh library for Processing. Orientated towards teaching the basic methods of geometry with He_Mesh and for exploring form for 3D printing. 
+Basic introduction to Frederik Vanhoutte's He_Mesh library for Processing. The main aim of these sketches is to teach the basic steps to rendering 3D geometry for 3D printing. These sketches are also accompanied with some online tutorials. (Links to be added soon).
 
 
 CONTENTS
