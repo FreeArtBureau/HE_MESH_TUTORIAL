@@ -28,8 +28,8 @@ void createModifiers() {
   if(STRUTOFFSET != 0) { // check we don't reach zero which will crash our program
   MESH.modify(modifier);
   
-   // INTERSTING MODIFIER    
-  MESH.modify( new HEM_Soapfilm().setIterations( 3 ) );
+   // INTERSTING MODIFIER (Have no idea what it does).  
+   MESH.modify( new HEM_Soapfilm().setIterations( 3 ) );
   
   }
   
