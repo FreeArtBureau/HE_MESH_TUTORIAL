@@ -11,3 +11,8 @@ CONTENTS
 Introduces the fundamental methods for creating cube geometry and applying modifiers to change visual form.
 
 ![CUBES](https://cloud.githubusercontent.com/assets/1027891/5424376/b6fe8dbc-82ec-11e4-9a27-9027828e7c5a.jpg)
+
+- 02_KEY_INTERFACE
+Adding some key input to modify shapes in realtime
+
+![CUBES](https://cloud.githubusercontent.com/assets/1027891/5424376/b6fe8dbc-82ec-11e4-9a27-9027828e7c5a.jpg)
