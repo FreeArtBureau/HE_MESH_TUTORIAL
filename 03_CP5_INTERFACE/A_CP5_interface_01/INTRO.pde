@@ -14,9 +14,11 @@ Parent : none
 
 This sketch demonstrates how we can implement modifications
 to our shapes using the ControlP5 library.
-I use again a simple cubic form and add two modifiers :
+I use a simple cubic form and add two modifiers :
 - Chamfer Corners
 - Chamfer Edges
+
+* Chamfer - Posh technical term for beveling ;--°
 
 The process is thus :
 -----------------------
