@@ -11,3 +11,6 @@ Contents :
 
 - He_Mesh version 1.8
   https://github.com/wblut/HE_Mesh2014
+
+You may also need to install Lee Byron's Mesh library :
+http://leebyron.com/else/mesh/
