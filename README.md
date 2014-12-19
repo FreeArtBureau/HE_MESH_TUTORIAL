@@ -20,3 +20,8 @@ CONTENTS
 
 - 03_CP5_INTERFACE
   Progressive development of sketches that use Andreas Schlegel's ControlP5 library. Neat sliders n' buttons for your   formal delight in three dimensional explorations.
+
+- 04_CONES & CYLINDERS
+  Working with conical and cylindrical shapes as well as taking a look at bending and twisting these objects to create interesting forms.
+
+![cones_cylinders](https://cloud.githubusercontent.com/assets/1027891/5499372/b628eefa-872e-11e4-9eb5-9c03835e0654.jpg)
