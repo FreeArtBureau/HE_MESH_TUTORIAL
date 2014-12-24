@@ -36,15 +36,15 @@ void setup() {
 /////////////////////////// DRAW ////////////////////////////
 void draw() {
   background(255);
-  directionalLight(255, 130, 7, 1, 1, -1);
-  directionalLight(255, 130, 7, -1, -1, 1);
+  directionalLight(255, 130, 7, 1, 0, -1);
+  directionalLight(255, 130, 7, -1, 0, 1);
 
   noStroke();
   fill(255);
   RENDER.drawFaces( MESH ); // DRAW MESH
 
   /*
-  stroke(0);
+   stroke(0);
    strokeWeight(0.5);
    RENDER.drawEdges( MESH );
    */

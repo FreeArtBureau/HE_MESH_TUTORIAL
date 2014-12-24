@@ -5,9 +5,9 @@ void createMesh() {
  HEC_Cone creator = new HEC_Cone(); // Our creator 
 
   //CREATOR PARMAMETERS
-  creator.setFacets(10); 
+  creator.setFacets(5); 
   creator.setHeight(70).setRadius(40); // 
-  creator.setSteps(7).setTaper(1.7); // Vertical divisions & taper
+  creator.setSteps(12).setTaper(1.7); // Vertical divisions & taper
   
   //alternatively
   //creator.setReverse(true); // reverses the cone
@@ -23,8 +23,8 @@ void createModifiers() {
    HEM_Wireframe strut = new HEM_Wireframe();
    
   //Parameters for each method can be set seperately ...
-  strut.setStrutRadius(10);
-  strut.setStrutFacets(8); // no more than 15, no less than 3
+  strut.setStrutRadius( 50 );
+  strut.setStrutFacets( 8 ); // no more than 15, no less than 3
   strut.setMaximumStrutOffset(4);
   strut.setTaper(true);
   MESH.modify( strut );

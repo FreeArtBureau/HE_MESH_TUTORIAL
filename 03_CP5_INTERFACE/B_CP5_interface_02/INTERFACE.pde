@@ -18,7 +18,7 @@ void controlInit() {
   Slider strutOff = INTERFACES.addSlider("STRUTOFFSET").setPosition(10, 60).setRange(1, 6).setValue(2); 
   Slider strutRad = INTERFACES.addSlider("STRUTRADIUS").setPosition(10, 80).setRange(85, 400).setValue(85); 
 
-  Toggle t1 = INTERFACES.addToggle("STRUT").setPosition(10, 140).setSize(15, 15).setValue(true).setLabel("Strut ON/OFF");
+  Toggle t1 = INTERFACES.addToggle("STRUT").setPosition(10, 140).setSize(15, 15).setValue(false).setLabel("Strut ON/OFF");
   
   // Add elements to new window
   chamfDist.setWindow(CW);
