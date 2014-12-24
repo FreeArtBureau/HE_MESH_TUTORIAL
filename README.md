@@ -11,7 +11,7 @@ CONTENTS
   Introduces the fundamental methods for creating cube geometry and applying modifiers to change visual form.
 
 - 02_KEY_INTERFACE
-  Adding some key input to modify shapes in realtime
+  Adding some key input to modify shapes in realtime.
 
 - 03_CP5_INTERFACE
   Progressive development of sketches that use Andreas Schlegel's ControlP5 library. Neat sliders n' buttons for your   formal delight in three dimensional explorations.
