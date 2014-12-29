@@ -27,6 +27,9 @@ void createModifiers() {
   strut.setStrutFacets( 8 ); // no more than 15, no less than 3
   strut.setMaximumStrutOffset(4);
   strut.setTaper(true);
+  // 
+  //strut.setFidget(3.3);
+   
   MESH.modify( strut );
   
   // BEND MODIFIER

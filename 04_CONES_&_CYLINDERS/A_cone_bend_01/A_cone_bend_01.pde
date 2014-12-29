@@ -27,7 +27,7 @@ int FRAME = 0;
 /////////////////////////// SETUP ////////////////////////////
 
 void setup() {
-  size(800, 800, OPENGL);
+  size(600, 600, OPENGL);
   CAM = new PeasyCam(this, 200);  
   createMesh();
   createModifiers();
