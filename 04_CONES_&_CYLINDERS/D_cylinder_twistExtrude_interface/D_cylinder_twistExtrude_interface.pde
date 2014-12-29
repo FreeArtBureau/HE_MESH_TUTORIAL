@@ -14,6 +14,7 @@ import processing.opengl.*;
 // HEMESH CLASSES & OBJECTS
 HE_Mesh MESH; // Our mesh object
 WB_Render RENDER; // Our render object
+HE_Selection SELECTION; // For making a selection of faces from our shape
 
 WB_Line L;
 float TWISTANGLE;
@@ -21,7 +22,6 @@ float TWISTANGLE;
 // CAM
 import peasy.*;
 PeasyCam CAM;
-int FRAME = 0;
 
 //ControlP5
 import controlP5.*;
@@ -29,10 +29,10 @@ import controlP5.*;
 ControlP5 INTERFACES;
 ControlWindow CW;
 int  VERTICALSTEPS, CYLINDERHEIGHT, RADIUSTOP, RADIUSBOTTOM, FACETS, 
-STEPS, STRUTOFF;
-float FINESSE;
-boolean STRUT;
+STEPS, STRUTOFF, EXTRUDEDIST; 
+boolean STRUT, EXTRUDE;
 
+int SEED;
 /////////////////////////// SETUP ////////////////////////////
 
 void setup() {
@@ -42,11 +42,12 @@ void setup() {
   createMesh();
   createModifiers();
   controlInit();
-  
+  SEED = (int)random(10000);
 }
 
 /////////////////////////// DRAW ////////////////////////////
 void draw() {
+  randomSeed(SEED);
   background(255);
   CAM.beginHUD(); // this method disables PeasyCam for the commands between beginHUD & endHUD
   directionalLight(255, 255, 255, 1, 1, -1);
@@ -58,8 +59,9 @@ void draw() {
   noStroke();
   fill(0, 0, 255);
   RENDER.drawFaces( MESH ); // DRAW MESH
-
 }
+
+
 
 /////////////////////////// FUNCTIONS ////////////////////////////
 
@@ -69,10 +71,9 @@ void keyPressed() {
   if (key == 'e') {
     // Hemesh includes a method for exporting geometry
     // in stl file format wich is very handy for 3D printing ;–)
-    HET_Export.saveToSTL(MESH, sketchPath("export"+ FRAME+++".stl"), 1.0);
-    // obj file format for further 3D raytracing rendering ( SUNFLOW )
-    HET_Export.saveToOBJ(MESH, sketchPath("export"+ FRAME+++".obj"));
-  }
+ HET_Export.saveToSTL(MESH, sketchPath("export"+ frameCount +".stl"), 1.0);
+     // obj file format for further 3D raytracing rendering ( SUNFLOW )
+    HET_Export.saveToOBJ(MESH, sketchPath("export"+ frameCount +".obj"));  }
 
   if (key == 's') {
     saveFrame("screenShot_###.png");
@@ -84,11 +85,15 @@ void keyPressed() {
     // on a flat plane ready for 3D printing
     CAM.reset(1000);
   }
+
   // Print camera position - could be helpful
   if (key == 'p') {
     float[] camPos = CAM.getPosition();
     println(camPos);
   }
-}
 
+  if (key == 'r') {
+    SEED = (int)random(10000);
+  }
+}
 
