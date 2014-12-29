@@ -71,7 +71,7 @@ void draw() {
   CAM.endHUD();
 
   noStroke();
-  // Iterate faces
+  // Iterate selected faces
   Iterator<HE_Face> fItr = SELECTION.fItr();
   HE_Face f;
   while (fItr.hasNext ()) {

@@ -13,7 +13,9 @@ Parent : none
 ------------------------------
 
 This sketch demonstrates how we can 
-iterate various faces of a polygon
+iterate various faces of a polygon.
+We select some random faces and then extrude them.
+Press 'r' to make another random selection.
 
 The process is thus :
 -----------------------

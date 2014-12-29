@@ -100,6 +100,8 @@ void keyPressed() {
     // Hemesh includes a method for exporting geometry
     // in stl file format wich is very handy for 3D printing ;–)
     HET_Export.saveToSTL(MESH, sketchPath("export.stl"), 1.0);
+     // obj file format for further 3D raytracing rendering ( SUNFLOW )
+    HET_Export.saveToOBJ(MESH, sketchPath("export"+ frameCount +".obj"));
   }
 
   if (key == 'c') {
