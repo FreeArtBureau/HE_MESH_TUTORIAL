@@ -58,13 +58,14 @@ void draw() {
   CAM.endHUD();
   
   // We draw our faces using the RENDER object
+  /*
   noStroke();
   fill(0, 0, 255);
   RENDER.drawFaces( MESH ); // DRAW MESH FACES
-  
-  //stroke(0);
-  //strokeWeight(0.5);
-  //RENDER.drawEdges( MESH );
+  */
+  stroke(0, 0, 255);
+  strokeWeight(.5);
+  RENDER.drawEdges( MESH );
 
 }
 

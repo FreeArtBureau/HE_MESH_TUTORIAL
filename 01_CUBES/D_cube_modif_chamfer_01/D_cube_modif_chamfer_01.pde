@@ -53,14 +53,16 @@ void draw() {
   CAM.endHUD();
 
   //HEMESH
+  /*
   noStroke();
   fill(0, 0, 255);
   RENDER.drawFaces( MESH ); // Draw MESH faces
-
-  /*
-  stroke(0);
-   render.drawEdges( MESH ); Draw MESH edges
-   */
+*/
+  
+  stroke(0, 0, 255);
+  strokeWeight( 5 );
+   RENDER.drawEdges( MESH ); //Draw MESH edges
+   
 }
 
 // SOME KEYS INTERACTION

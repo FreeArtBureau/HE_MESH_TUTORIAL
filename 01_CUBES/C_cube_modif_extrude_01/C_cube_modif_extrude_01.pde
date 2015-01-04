@@ -60,8 +60,17 @@ void draw() {
   RENDER.drawFaces( MESH ); // Draw MESH faces
   */
   
-  stroke(255, 0, 0);
+  stroke(0, 0, 255);
   strokeWeight(5);
   RENDER.drawEdges( MESH ); // Draw MESH edges
+}
+
+void keyPressed() {
+  if (key == 'r') {
+    setup();
+  }
+  if (key == 's') {
+    saveFrame("screenShot.png");
+  }
 }
 

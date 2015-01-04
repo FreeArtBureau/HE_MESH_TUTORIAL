@@ -54,7 +54,7 @@ void setup() {
   }
 
   // MODIFIER : SIMPLE EXTRUSION MODIFIER 
-  HEM_Extrude extrude = new HEM_Extrude().setDistance(10);
+  HEM_Extrude extrude = new HEM_Extrude().setDistance(15);
 
   // use the modifySelected method for only modifying selected faces 
   MESH.modifySelected( extrude, SELECTION ); 
@@ -80,12 +80,21 @@ void draw() {
     fill(c);
     RENDER.drawFace( f );
   }
-
+  /*
   fill(255, 173); // Added a little transparency here
-  RENDER.drawFaces( MESH ); // DRAW MESH FACES
+   RENDER.drawFaces( MESH ); // DRAW MESH FACES
+   */
+  stroke(0, 0, 255);
+  strokeWeight(.5);
+  RENDER.drawEdges( MESH ); // DRAW MESH EDGES
 }
 
 void keyPressed() {
-  setup();
+  if (key == 'r') {
+    setup();
+  }
+  if (key == 's') {
+    saveFrame("screenShot.png");
+  }
 }
 
