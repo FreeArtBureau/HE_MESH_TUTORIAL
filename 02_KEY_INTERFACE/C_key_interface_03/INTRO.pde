@@ -6,8 +6,8 @@ FOR 3D PRINTING
 ///////////////
 
 ------------------------
-Sketch : key_interface_03
-Parent : key_interface_02
+Sketch : C_key_interface_03
+Parent : B_key_interface_02
 ------------------------
 
 This sketch enables to change the basic creator

@@ -35,7 +35,7 @@ void setup() {
   ARCHITYPE = 1;
   STRUTOFFSET = 20;
   TWISTANGLE = radians(0);
-  // Our two methods for create our mesh & modifiers  
+  // Our two functions to create our mesh & modifiers  
   createMesh();
   createModifiers();
 }

@@ -8,10 +8,9 @@ void controlInit() {
   CW = INTERFACES.addControlWindow("controlP5window", 10, 10, 200, 300, 30);
 
   //Create sliders 
-
   Slider chamfDist = INTERFACES.addSlider("CHAMFERDIST").setPosition(10, 20).setRange(1, 50).setValue(10); 
-  chamfDist.getCaptionLabel().setColorBackground(color(255, 20, 30)); // changer la couler de fond pour le texte
-  chamfDist.getCaptionLabel().getStyle().setPadding(4, 2, 2, 2); // changer sa taille (pour le texte)
+  chamfDist.getCaptionLabel().setColorBackground(color(255, 20, 30)); 
+  chamfDist.getCaptionLabel().getStyle().setPadding(4, 2, 2, 2); 
   // shift the caption label up by 4px
   chamfDist.getCaptionLabel().getStyle().setMargin(-5, 0, 0, 0); 
   

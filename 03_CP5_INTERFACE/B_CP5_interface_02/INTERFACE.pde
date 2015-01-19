@@ -16,7 +16,7 @@ void controlInit() {
 
   Slider chamfEdge = INTERFACES.addSlider("CHAMFEREDGE").setPosition(10, 40).setRange(1, 20).setValue(5); 
   Slider strutOff = INTERFACES.addSlider("STRUTOFFSET").setPosition(10, 60).setRange(1, 6).setValue(2); 
-  Slider strutRad = INTERFACES.addSlider("STRUTRADIUS").setPosition(10, 80).setRange(85, 400).setValue(85); 
+  Slider strutRad = INTERFACES.addSlider("STRUTRADIUS").setPosition(10, 80).setRange(40, 400).setValue(80); 
 
   Toggle t1 = INTERFACES.addToggle("STRUT").setPosition(10, 140).setSize(15, 15).setValue(false).setLabel("Strut ON/OFF");
   

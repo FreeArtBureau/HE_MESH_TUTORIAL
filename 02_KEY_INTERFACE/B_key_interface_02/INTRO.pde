@@ -6,13 +6,13 @@ FOR 3D PRINTING
 ///////////////
 
 ------------------------
-Sketch : key_interface_02
-Parent : key_interface_01
+Sketch : B_key_interface_02
+Parent : A_key_interface_01
 ------------------------
 
 This sketch is an evolution of key_interface_01
 Notice the INIT tab - putting all initialising 
-methods for setting up geometry into two simple functions.
+functions for setting up geometry into two simple functions.
 Just a nice way to make our code better organised for the next
 steps in developments ;–)
 

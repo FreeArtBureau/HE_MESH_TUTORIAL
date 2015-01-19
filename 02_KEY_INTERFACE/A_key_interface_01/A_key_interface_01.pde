@@ -68,7 +68,7 @@ void draw() {
 /////////////////////////// FUNCTIONS ////////////////////////////
 void renderMESH() {
 
-  // render is our Render class object we call and to which we add 
+  // RENDER is our Render class object we call and to which we add 
   // our mesh. The render class has various methods for drawing to the screen
   switch(VIEW) {
   case 1:

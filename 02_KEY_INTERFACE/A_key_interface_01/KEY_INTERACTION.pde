@@ -5,7 +5,7 @@ f = show fill / faces
 s = smooth fill / faces
 e = show only contour / edges
 n = show normals
-h = show half edges
+h/t = show half edges
 
 Other stuff
 c = png export
