@@ -2,12 +2,12 @@
 
 void createMesh() {
 
-  HEC_Cube CREATOR = new HEC_Cube(); // Our creator 
+  HEC_Cube creator = new HEC_Cube(); // Our creator 
 
   //CREATOR PARMAMETERS
-  CREATOR.setEdge(60); 
-  MESH = new HE_Mesh(CREATOR);  // ADD OUR CREATOR PARAMETERS TO OUR MESH
-  CREATOR.setWidthSegments(4).setHeightSegments(4).setDepthSegments(4); // keep these small
+  creator.setEdge(60); 
+  MESH = new HE_Mesh( creator );  // ADD OUR CREATOR PARAMETERS TO OUR MESH
+  creator.setWidthSegments(4).setHeightSegments(4).setDepthSegments(4); // keep these small
   
   // Render our meshes
   RENDER = new WB_Render(this);

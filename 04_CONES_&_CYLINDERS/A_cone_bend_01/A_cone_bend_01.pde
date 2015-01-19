@@ -18,6 +18,7 @@ WB_Render RENDER; // Our render object
 // Check these two objects
 WB_Plane P; 
 WB_Line L;
+float STRETCH_FACT;
 
 // CAM
 import peasy.*;
@@ -28,7 +29,8 @@ int FRAME = 0;
 
 void setup() {
   size(600, 600, OPENGL);
-  CAM = new PeasyCam(this, 200);  
+  CAM = new PeasyCam(this, 200);
+  STRETCH_FACT  = 3;
   createMesh();
   createModifiers();
 }
@@ -39,6 +41,9 @@ void draw() {
   directionalLight(255, 130, 7, 1, 1, -1);
   directionalLight(255, 130, 7, -1, -1, 1);
 
+
+  createMesh();
+  createModifiers();
   noStroke();
   fill(255);
   RENDER.drawFaces( MESH ); // DRAW MESH
@@ -73,6 +78,14 @@ void keyPressed() {
   if (key == 'p') {
     float[] camPos = CAM.getPosition();
     println(camPos);
+  }
+  
+  if(key == '+') {
+    STRETCH_FACT += 0.05;
+  }
+  
+   if(key == '-') {
+    STRETCH_FACT -= 0.05;
   }
 }
 
