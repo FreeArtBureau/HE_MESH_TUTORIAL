@@ -53,8 +53,7 @@ void createModifiers() {
   */
   // INTERSTING MODIFIER
   MESH.modify( new HEM_Soapfilm().setIterations(3)); 
-  HET_Diagnosis.validate( MESH );
-
+  //HET_Diagnosis.validate( MESH );
   RENDER = new WB_Render(this); // RENDER MESH
 }
 

@@ -8,8 +8,8 @@ www.freeartbureau.org
 /////////////////////
 
 ------------------------------
-Sketch : C_MultiSlicer_P5V2_01
-Parent : B_Sphere_P5V2
+Sketch : B_Sphere_P5V2
+Parent : cp5_interface_02
 ------------------------------
 
 

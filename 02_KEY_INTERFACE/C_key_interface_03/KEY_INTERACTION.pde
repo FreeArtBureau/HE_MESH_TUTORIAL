@@ -99,9 +99,15 @@ void keyPressed() {
   if (key == 'm') {
     // Hemesh includes a method for exporting geometry
     // in stl file format wich is very handy for 3D printing ;–)
-    HET_Export.saveToSTL(MESH, sketchPath("export.stl"), 1.0);
+    //HET_Export.saveToSTL(MESH, sketchPath("export.stl"), 1.0);
+    
+    // VP2 - Must triangulate mesh before hand and notice last argument for STL export
+    // changes to a String 
+     MESH.triangulate();
+     HET_Export.saveToSTL(MESH, sketchPath("STL"), "export");
+    
      // obj file format for further 3D raytracing rendering ( SUNFLOW )
-    HET_Export.saveToOBJ(MESH, sketchPath("export"+ frameCount +".obj"));
+    //HET_Export.saveToOBJ(MESH, sketchPath("export"+ frameCount +".obj"));
   }
 
   if (key == 'c') {

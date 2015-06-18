@@ -64,7 +64,7 @@ void setup() {
 
 /////////////////////////// DRAW ////////////////////////////
 void draw() {
-  background(255);
+  background(0);
   CAM.beginHUD(); // this method disables PeasyCam for the commands between beginHUD & endHUD
   directionalLight(255, 255, 255, 1, 1, -1);
   directionalLight(127, 127, 127, -1, -1, 1);
@@ -84,7 +84,7 @@ void draw() {
   fill(255, 173); // Added a little transparency here
    RENDER.drawFaces( MESH ); // DRAW MESH FACES
    */
-  stroke(0, 0, 255);
+  stroke(255);
   strokeWeight(.5);
   RENDER.drawEdges( MESH ); // DRAW MESH EDGES
 }

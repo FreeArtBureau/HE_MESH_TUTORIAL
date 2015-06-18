@@ -26,7 +26,6 @@ PeasyCam CAM;
 import controlP5.*;
 
 ControlP5 INTERFACES;
-ControlWindow CW;
 int EXTRUDEDIST, CHAMFEREDGE, SLICE_OFFSET;
 float BLENDING; 
 boolean CATMULL, SLICE;
@@ -57,6 +56,10 @@ void draw() {
   createMesh();
   createModifiers();
   RENDER.drawFaces( MESH ); // Draw MESH faces
+  
+  CAM.beginHUD();
+  INTERFACES.draw();
+  CAM.endHUD();
 }
 
 /////////////////////////// FUNCTIONS ////////////////////////////

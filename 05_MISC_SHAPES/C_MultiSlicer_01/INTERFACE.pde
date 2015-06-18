@@ -4,8 +4,6 @@
 void controlInit() {
   INTERFACES = new ControlP5(this);  
   INTERFACES.setAutoDraw(false); 
-  // Create a new window (doesn't work in Processing 2.0+)
-  CW = INTERFACES.addControlWindow("controlP5window", 10, 10, 200, 420, 30);
 
   //Create sliders 
   Slider extrude = INTERFACES.addSlider("EXTRUDEDIST").setPosition(10, 20).setRange(1, 50).setValue(10); 
@@ -33,19 +31,5 @@ void controlInit() {
   .setNumberOfTickMarks(13); 
 
 
-  // Add elements to new window
-  extrude.setWindow(CW);
-  chamfEdge.setWindow(CW);
-  //sliceOff.setWindow(CW);
-  catmullBlend.setWindow(CW);
-  oPlaneX.setWindow(CW);
-  //oPlaneY.setWindow(CW);
-  //oPlaneZ.setWindow(CW);
-  dPlaneX.setWindow(CW);
-  dPlaneY.setWindow(CW);
-  dPlaneZ.setWindow(CW);
-  
-  t1.setWindow(CW);
-  t2.setWindow(CW);
 }
 
