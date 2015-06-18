@@ -5,6 +5,7 @@ Basic introduction to Frederik Vanhoutte's He_Mesh library for Processing. The m
 
 - [Tutorial Part 1](http://freeartbureau.org/fab_activity/hemesh-3d-printing/)
 - [Tutorial Part 2](http://freeartbureau.org/fab_activity/hemesh-3d-printing-part-2/)
+- [Tutorial Part 3](http://freeartbureau.org/fab_activity/hemesh-part-3/)
 
 CONTENTS
 ========
@@ -20,5 +21,8 @@ CONTENTS
 
 - 04_CONES & CYLINDERS
   Working with conical and cylindrical shapes as well as taking a look at bending and twisting these objects to create interesting forms.
+
+- 05_MISC_SHAPES
+  A few extras that came together in the development of things. Would be nice to add colloborative works from other people. We'll see. Perhaps a workshop with Fred some day would be a fruitful endeavour ;–)
 
 ![formevolution_model_3](https://cloud.githubusercontent.com/assets/1027891/5549447/44765a52-8b8b-11e4-846f-f79161d37584.jpg)
