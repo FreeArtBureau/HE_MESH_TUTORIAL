@@ -47,7 +47,7 @@ void draw() {
   // HEMESH
   // We draw our faces using the RENDER object
   noStroke();
-  fill(0, 0, 255);
+  fill(0, 255, 255);
   RENDER.drawFaces( MESH ); // Draw MESH faces
 
   stroke(255, 0, 0);
